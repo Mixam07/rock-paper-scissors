@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <title>RPS</title>
+</head>
+    <body>
+        <div class="playground">
+            <div class="scores">
+                <div>
+                    <h2>Player</h2>
+                    <div id="player">0</div>
+                </div>
+                <div>
+                    <h2>Computer</h2>
+                    <div id="computer">0</div>
+                </div>
+            </div>
+            <h1 class="winner">
+                Choose an option
+            </h1>
+            <div class="hands">
+                <div class="hand">
+                    <img class="" id="players_hand" src="./assets/rock.png" alt="hand">
+                </div>
+                <div class="hand">
+                    <img class="animated" id='computers_hand' src="./assets/rock.png" alt="hand">
+                </div>
+            </div>
+            <div class="options">
+                <button id="rock" class="option_button">
+                    rock
+                </button>
+                <button id="paper" class="option_button">
+                    paper
+                </button>
+                <button id="scissors" class="option_button">
+                    scissors
+                </button>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
