@@ -81,7 +81,7 @@ class App {
 
     determineWinner() {
         if (this.playersChoice === this.computersChoice) {
-            this.setWinnerLabel('Draw!!!');
+            this.setWinnerLabel('Нічия!!!');
         } else if (
             (this.playersChoice === this.rockPath && this.computersChoice === this.scissorsPath) ||
             (this.playersChoice === this.paperPath && this.computersChoice === this.rockPath) ||
@@ -98,13 +98,13 @@ class App {
     }
 
     playerWon() {
-        this.setWinnerLabel('Player won');
+        this.setWinnerLabel('Гравець виграв');
         this.playersScore++;
         this.updateScores();
     }
 
     computerWon() {
-        this.setWinnerLabel('Computer won');
+        this.setWinnerLabel('Комп\'ютер виграв');
         this.computersScore++;
         this.updateScores();
     }
@@ -117,7 +117,7 @@ class App {
     resetGame() {
         this.playersHand.setAttribute('src', this.rockPath);
         this.computersHand.setAttribute('src', this.rockPath);
-        this.setWinnerLabel('Choose an option');
+        this.setWinnerLabel('Виберіть варіант');
     }
 }
 
